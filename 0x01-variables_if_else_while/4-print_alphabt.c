@@ -1,49 +1,23 @@
 #include <stdio.h>
 
+/**
+  * main - Prints some letters of alphabet
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-    char ch = 'a';
-	while(ch <= 'z')
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		if (ch != 'e' && ch != 'q')
+		if (c != 'e' && c != 'q')
 		{
-			putchar(ch);
-		}
-		ch++;
-	}
-	putchar('\n');
-
-    return 0;
-}
-
-#include <stdio.h>
-
-int main(void)
-{
-    
-	for (char ch = 'a'; ch <= 'z'; ch++)
-	{
-		if (ch != 'e' && ch != 'q')
-		{
-			putchar(ch);
+			putchar(c);
 		}
 	}
+
 	putchar('\n');
 
-    return 0;
-}
-
-int main(void)
-{
-    
-	for (char ch ='a'; ch <= 'z'; ch++)
-	{
-		if (ch == 'e' || ch == 'q')
-		    ch++;
-		putchar(ch);
-		
-	}
-	putchar('\n');
-
-    return 0;
+	return (0);
 }

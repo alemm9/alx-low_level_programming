@@ -1,11 +1,27 @@
 #include "main.h"
 
 /**
- * _isupper - checks for uppercase character
- * @letter: the character to be tracked
- * Return: 1 if c is uppercase, 0 otherwise
+ *_strcat - concatinate 2 strings.
+ *@dest: first string.
+ *@src: second string.
+ *Return: string.
  */
-int _isupper(int letter)
+
+char *_strcat(char *dest, char *src)
 {
-	return (letter >= 'A' && letter <= 'Z');
+	int i = 0, j = 0;
+
+	while (dest[i] != '\0')
+		i++;
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+
+	dest[i] = '\0';
+
+	return (dest);
 }

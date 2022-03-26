@@ -1,23 +1,24 @@
 #include "main.h"
 
 /**
- * more_numbers - prints 10 times the numbers, from 0 to 14
+ *string_toupper - changes all lowercase letters of a string to uppercase.
+ *@s: string to modify.
+ *
+ *Return: s modified.
  */
 
-void more_numbers(void)
+char *string_toupper(char *s)
 {
-	int c, x;
+	int i = 0;
 
-	for (c = 0; c < 10; c++)
+	while (s[i] != '\0')
 	{
-		for (x = 0; x <= 14; x++)
+		if (s[i] > 96 && s[i] < 123)
 		{
-			if (x > 9)
-			{
-				_putchar((x / 10) + 48);
-			}
-			_putchar((x % 10) + 48);
+			s[i] -= 32;
 		}
-		_putchar(10);
+		i++;
 	}
+
+	return (s);
 }

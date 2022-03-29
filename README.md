@@ -1,1 +1,1 @@
-more functions nested loops readme
+pointers arrays strings
